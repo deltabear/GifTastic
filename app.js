@@ -14,7 +14,17 @@
     // Array of buttons
 var topics = ["Optimus Prime", "Megatron", "Transformers G1", "Beast Wars"]
 
-// Loop which will take each part of the array and appends to a button
-for (i = 0; i < topics.length; i++) {
-    $("<#buttons>").append(topics[i])
+// Function and Loop which will take each part of the array and appends to a button
+function renderButtons() {
+    $("#buttons").empty();
+
+    for (i = 0; i < topics.length; i++) {
+      var a=$("<button>");
+      a.addClass("topic");
+      a.attr("data-name", topics[i]);
+      a.text(topics[i]);
+      $("#buttons").append(a);
+    }
 }
+
+// User click button event, page should grab 10 static gifs from API
