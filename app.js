@@ -11,6 +11,10 @@
     //make a function call that takes each topic in the array remakes the buttons on the page.
 
 
-var topics = ['Transformers Animated', 'Transformers Prime', "Transformers G1", 
-            "Beast Wars", "Optimus Prime", "Megatron"]
+    // Array of buttons
+var topics = ["Optimus Prime", "Megatron", "Transformers G1", "Beast Wars"]
 
+// Loop which will take each part of the array and appends to a button
+for (i = 0; i < topics.length; i++) {
+    $("<#buttons>").append(topics[i])
+}
