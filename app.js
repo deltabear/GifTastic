@@ -1,3 +1,5 @@
+// Create request for API
+
 // Create array of strings related to topic that interests you
 // Your app should take the topics in this array and create buttons in your HTML.
     //Try using a loop that appends a button for each string in the array.
@@ -10,6 +12,14 @@
 // Add form to page that takes user input value and adds it to 'topics' array
     //make a function call that takes each topic in the array remakes the buttons on the page.
 
+function buildQueryURL() {
+    // queryURL is the url we'll use to query the API
+    var queryURL = "";
+      
+    // Begin building an object to contain our API call's query parameters
+    // Set the API key
+    var queryParams = { "api-key": "D8yCtMtas88S6OW60SRHwAih3BqYBUop" };
+      
 
     // Array of buttons
 var topics = ["Optimus Prime", "Megatron", "Transformers G1", "Beast Wars"]
