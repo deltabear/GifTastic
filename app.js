@@ -12,11 +12,11 @@
 // Add form to page that takes user input value and adds it to 'topics' array
     //make a function call that takes each topic in the array remakes the buttons on the page.
 
-    // Array of buttons
+    // Array of topics to be made into buttons
 var bugArray = ["Grasshopper", "Ant", "Wasp", "Honeybee", "Moth", "Butterfly"]
 
 // Function and Loop which will take each part of the array and appends to a button
-
+// appended string into button onclick function to search each part of array strings
 $(document).ready(function() {
     for (var i = 0; i < bugArray.length; i++) {
         $("#bug-buttons").append("<button type='button' onclick='searchGif(\"" + bugArray[i] + "\")' class='btn btn-primary' value=' " + bugArray[i] + "'> " + bugArray[i] + " </button>");
@@ -39,6 +39,7 @@ function submitButtonClicked() {
     }
 }
 
+// Ajax will take 
 function searchGif(gifName) {
     $.ajax({
             url: 'https://api.giphy.com/v1/gifs/search?q= ' + gifName + ' &api_key=D8yCtMtas88S6OW60SRHwAih3BqYBUop',
