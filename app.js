@@ -23,14 +23,13 @@ $(document).ready(function() {
     }
 });
 
-// User click button event, page should grab 10 static gifs from API
 
 function buttonClicked() {
     var userInput = $('#bug-input').val();
     searchGif(userInput);
 }
 
-// 
+// submitting the user input to be appended to the buttons div as another button
 function submitButtonClicked() {
     var userInput = $('#bug-input').val();
 
@@ -39,7 +38,7 @@ function submitButtonClicked() {
     }
 }
 
-// Ajax will take 
+// Ajax will use the gifName to search the API database for gifs with that keyword and display it
 function searchGif(gifName) {
     $.ajax({
             url: 'https://api.giphy.com/v1/gifs/search?q= ' + gifName + ' &api_key=D8yCtMtas88S6OW60SRHwAih3BqYBUop',
@@ -64,7 +63,7 @@ function displayGif(response) {
     }
 
 
-//Clicking on the gif will make it dynamic/animated
+//Clicking on the gif will make it dynamic/animated, clicking again will freeze it
     $('.movImage').on('click', function() {
         var state = $(this).attr('data-state');
         if (state == 'still') {
