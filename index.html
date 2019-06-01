@@ -4,37 +4,41 @@
 <head>
   <meta charset="utf-8">
   <title>Buggy Gifs</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-
+  <div class="main-container">
   <h1 class="text-center">Buggy Gifs</h1>
   <h2>Content warning: Some of these gifs may have spiders/swarms. User beware!</h2>
   <br>
+
   <!-- Buttons will be displayed in this div. -->
-  <div id="bug-buttons"> </div>
-  <br>
-  <br>
+    <div class="row">
+      <div id="bug-buttons"> </div>
+      <br>
+      <br>
+    </div>
  
-  <div class="container" id="btn" style="background: transparent;">
-      <form id="bug-form">
-         <!-- This field will allow users to add input button to the array -->
-          <label id="add" for="bug-input">Please enter arthropod name</label>
-          <input type="text" class="form-control" id="bug-input">
-          <br>
-          <br>
-      </form>
-      <button onclick="submitButtonClicked()" type="button" id="add-tf" class="btn btn-success">Submit</button>
-      <br>
-      <br>
+    <div class="container" id="btn" style="background: transparent;">
+        <form id="bug-form">
+          <!-- This field will allow users to add input button to the array -->
+            <label id="add" for="bug-input">Please enter arthropod name</label>
+            <input type="text" class="form-control" id="bug-input">
+            <br>
+            <br>
+        </form>
+        <button onclick="submitButtonClicked()" type="button" id="add-tf" class="btn btn-success">Submit</button>
+        <br>
+        <br>
 
-<!-- Retrieved gifs will be displayed below this div -->
-<div id="bugs">
+  <!-- Retrieved gifs will be displayed below this div -->
+  <div id="bugs">
 </div>
-
+</div>
 <!-- jQuery JS -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
