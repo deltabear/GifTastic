@@ -34,7 +34,7 @@ function submitButtonClicked() {
     var userInput = $('#bug-input').val();
 
     if (userInput) {
-        $('#bug-buttons').append("<button type='button' onclick='searchGif(\"" + userInput + "\")' class='btn btn-infoS' value=' " + userInput + "'> " + userInput + " </button>");
+        $('#bug-buttons').append("<button type='button' onclick='searchGif(\"" + userInput + "\")' class='btn btn-info' value=' " + userInput + "'> " + userInput + " </button>");
     }
 }
 
