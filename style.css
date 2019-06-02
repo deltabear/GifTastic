@@ -1,15 +1,33 @@
 body {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
     background-image: url("images/spring.png");
     background-repeat: repeat;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Indie Flower', cursive;
     padding: 10px;
 }
 
-.btn-primary {
+p {
+    text-align: left;
+}
+
+img {
+    margin-bottom: 5px;
+}
+
+.btn-info {
     margin-left: 10px;
 }
 
+@media screen and (max-width: 480px) {
+    .movImage {
+        width: 500px;
+        height: 500px;
+    }
+    body {
+        background-color: rgb(165, 165, 165);
+    }
+}
