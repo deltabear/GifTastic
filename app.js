@@ -19,7 +19,7 @@ var bugArray = ["Grasshopper", "Ant", "Wasp", "Honeybee", "Moth", "Butterfly"]
 // appended string into button onclick function to search each part of array strings
 $(document).ready(function() {
     for (var i = 0; i < bugArray.length; i++) {
-        $("#bug-buttons").append("<button type='button' onclick='searchGif(\"" + bugArray[i] + "\")' class='btn btn-primary' value=' " + bugArray[i] + "'> " + bugArray[i] + " </button>");
+        $("#bug-buttons").append("<button type='button' onclick='searchGif(\"" + bugArray[i] + "\")' class='btn btn-info' value=' " + bugArray[i] + "'> " + bugArray[i] + " </button>");
     }
 });
 
@@ -34,7 +34,7 @@ function submitButtonClicked() {
     var userInput = $('#bug-input').val();
 
     if (userInput) {
-        $('#bug-buttons').append("<button type='button' onclick='searchGif(\"" + userInput + "\")' class='btn btn-primary' value=' " + userInput + "'> " + userInput + " </button>");
+        $('#bug-buttons').append("<button type='button' onclick='searchGif(\"" + userInput + "\")' class='btn btn-infoS' value=' " + userInput + "'> " + userInput + " </button>");
     }
 }
 
