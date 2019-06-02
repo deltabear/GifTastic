@@ -1,6 +1,15 @@
+body {
+    text-align: center;
+    background-image: url("images/spring.png");
+    background-repeat: repeat;
+}
+
+h1, h2 {
+    font-family: 'Indie Flower', cursive;
+    padding: 10px;
+}
+
 .btn-primary {
     margin-left: 10px;
-    background: #DF6747;
-    border-color: #DF6747;
-
 }
+

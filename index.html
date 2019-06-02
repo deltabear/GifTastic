@@ -2,32 +2,40 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
   <title>Buggy Gifs</title>
 
    <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+
   <div class="main-container">
     <div class="container">
-  <h1 class="text-center">Buggy Gifs</h1>
-  <h2>Content warning: Some of these gifs may have spiders/swarms. User beware!</h2>
-  <br>
+      <h1 class="text-center" id="buggy-title">Buggy Gifs</h1>
+      <img id="mascot" src="images/grasshopper-graphic.png" style="width: 150px">
+        <h2>Content warning: Some of these gifs may have spiders/swarms. User beware!</h2>
+      <br>
 
   <!-- Buttons will be displayed in this div. -->
+  <div class="container">
     <div class="row">
       <div id="bug-buttons"> </div>
       <br>
       <br>
     </div>
- 
+ </div>
+
     <div class="container" id="btn" style="background: transparent;">
         <form id="bug-form">
           <!-- This field will allow users to add input button to the array -->
-            <label id="add" for="bug-input">Please enter arthropod name</label>
+            <label id="add" for="bug-input" style="justify-content: left">Please enter arthropod name:</label>
             <input type="text" class="form-control" id="bug-input">
             <br>
             <br>
@@ -40,6 +48,16 @@
   <div id="bugs">
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer class="fixed-bottom text-center">
+    <div class="card bg-secondary text-white">
+        <div class="card-header">
+          Copyright &#169; E. Delzer 2019
+        </div>
+      </div>   
+  </footer>
+
 </div>
 <!-- jQuery JS -->
 <script src="https://code.jquery.com/jquery.js"></script>
